@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class swapInt 
+{
+    public static void main(String args[]) 
+    {
+        
+        Scanner keyboard = new Scanner(System.in);
+        int num1, num2, max, min;
+        
+        System.out.print("Enter an integer: ");
+        num1 = keyboard.nextInt();
+        System.out.print("Enter another integer: ");
+        num2 = keyboard.nextInt();
+        
+        if (num1 > num2)
+        {
+            num2 = num1;
+            System.out.print("Swapped Value Is: " + num1);
+        } else 
+            System.out.println("Values can't be not swapped");
+    } // End main
+} // End class
